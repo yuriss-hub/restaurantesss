@@ -1,0 +1,537 @@
+
+/* Paleta de cores */
+
+/* Backgroung e botões: #A60808 */
+/* Bordas, títulos, barras laterais: #FFFFFF */
+/* Background do card produto, background do modal e botão de fechar: rgb(241, 241, 241) */
+/* Paleta de cores */
+
+/* Estilização para o html raiz */
+html{
+    font-size: 14px;
+}
+/* Estilização para o html raiz */
+
+/* Estilizção para o header */
+header{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    width: 100%;
+    background-color: #A60808;
+    color: white;
+    padding: 2rem 4rem;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.cabecalho .logo img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.cabecalho .titulo-restaurante a{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.btn-fechar{
+    padding: 1rem;
+}
+
+.btn-fechar i{
+    width: 5rem;
+}
+
+.icon-large {
+    font-size: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-abrir-menu{
+    display: none;
+    display: none;
+    justify-self: center;
+    align-self: center;
+}
+
+.btn-abrir-menu img{
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    width: 1.5rem;
+}
+
+.menu-mobile{
+    display: none;
+    background-color: #A60808;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0rem;
+    z-index: 999999;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    border: white solid 0.1rem;
+    border-radius: 0.2rem;
+}
+
+
+.menu-mobile ul{
+    list-style: none;
+    text-align: right;
+}
+
+.menu-mobile ul li{
+    margin-bottom: 3rem;
+}
+
+.menu-mobile nav ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.2rem 4rem;
+    text-align: center;
+}
+
+/* Estilizção para o header */
+
+
+/* Estilização para o body e main*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+}
+/* Estilização para o body */
+
+/* Estilização para o sidebar (conteúdo lateral) */
+.caixa-lateral{
+    background-color: #A60808;
+    height: 100vh;
+    width: 17rem;
+}
+.conteudo-lateral{
+    background-color: #A60808;
+    height: 100vh;
+    width: 17rem;
+}
+
+.conteudo-lateral ul{
+    list-style: none;
+}
+.categoria{
+    margin-top: 3rem;
+    display: flex;
+    margin-right: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.icone-categoria img{
+    width: 2.5rem;
+}
+
+.titulo-categoria a{
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#bebidas-alcoolicas, #hamburgueres, #petiscos, #refrigerantes, #sobremesas {
+    display: grid;
+}
+/* Estilização para o sidebar (conteúdo lateral) */
+
+/* Estilização para a tela inicial */
+
+.tela-inicial{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.informacoes{
+    display: flex;
+    gap: 2rem;
+}
+
+.tela-inicial{
+    width: 100vw;
+    height: 100vh;
+    background-color: #A60808;
+}
+
+.informacoes{
+    margin-bottom: 3rem;
+}
+
+.caixa h1{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    display: flex;
+    margin: auto;
+}
+
+.titulo{
+    margin: auto;
+}
+
+.caixa p{
+    font-family: "Poppins", sans-serif;
+}
+
+.botao a{
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: #A60808;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+
+.caixa{
+    align-self: center;
+    justify-items: center;
+}
+
+.logo-inicial img{
+    width: 4rem;
+}
+/* Estilização para a tela inicial */
+
+
+/* Estilização para o conteúdo principal */
+
+.conteudo-principal-produto{
+    max-height: 50rem; /* Ajuste a altura conforme necessário */
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem 0.5rem;
+}
+
+.card-produto{
+    width: 12rem;
+    height: 16rem;
+    background-color: rgb(241, 241, 241);
+    padding: 0.4rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.card-produto p{
+    display: block;
+    font-size: 0.90rem;
+    font-weight: bold;
+}
+
+.card-produto span{
+    display: block;
+    font-size: 0.80rem;
+}
+
+.imagem-produto{
+    width: 100%;
+    margin: 0.5rem auto;
+}
+
+.imagem-produto img{
+    width: 8rem;
+    border-radius: 1rem;
+}
+
+.descricao-produto{
+    margin-bottom: 0.5rem;
+}
+
+button{
+    background-color: #A60808;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    width: 5rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    font-size: 0.8rem;
+}
+/* Estilização para o conteúdo principal */
+
+/* Estilização para o modal */
+
+.modal button{
+    width: 13rem;
+    font-size: 0.8rem;
+    background-color: #A60808;
+    border: none;
+    border-radius: 1rem;
+}
+
+.modal i{
+    margin: 0.3rem;
+}
+
+.modal .btn-close{
+    width: 1rem;
+    background-color: rgb(241, 241, 241);
+}
+
+.modal .btn-close:hover{
+    width: 1rem;
+    background-color: rgb(241, 241, 241);
+}
+
+#modal{
+    align-self: center;
+}
+
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #A60808;
+    --bs-btn-border-color: #A60808;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #A60808;
+    --bs-btn-hover-border-color: #A60808;
+    --bs-btn-focus-shadow-rgb: #A60808;
+    --bs-btn-active-color: #A60808;
+    --bs-btn-active-bg: rgb(241, 241, 241);
+    --bs-btn-active-border-color: #A60808;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-success:active{
+    background-color: #A60808;
+}
+
+.modal-footer button:hover{
+    background-color: #A60808;
+}
+
+.modal .form-control{
+    width: 5rem;
+}
+
+.modal-content{
+    background-color: rgb(241, 241, 241);
+}
+/* Estilização para o modal */
+
+/* Estilização para barras laterais */
+::-webkit-scrollbar{
+    background-color: #A60808;
+} */
+
+ ::-webkit-scrollbar{
+    background-color: #A60808;
+} 
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10rem;
+    border: 0.25rem solid #A60808;
+}
+/* Estilização para barras laterais */
+
+/* Responsividade para dispositivos que possuem 1024px */
+@media (max-width:1024px){
+
+    body{
+        width: 100vw;
+    }
+
+    .conteudo-principal-produto{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .conteudo-mensagem {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
+        align-content: center;
+      }
+    
+}
+/* Responsividade para dispositivos que possuem 1024px */
+
+/* Responsividade para dispositivos que possuem 860px */
+@media (max-width:860px){
+
+    body{
+        width: 100vw;
+    }
+
+    .cabecalho .logo img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .caixa-lateral, .conteudo-lateral{
+        display: none;
+    }
+
+    .card-mensagem{
+        width: 85vw;
+        height: 30vh;
+    }
+
+    .card-mensagem p{
+        font-size: 1rem;
+    }
+
+    .conteudo-mensagem{
+        margin-top: 7rem;
+        margin-left: 3rem;    
+    }
+
+    #mensagem{
+        display: none;
+    }
+    
+    #mensagem:target{
+        display: grid;
+    }
+
+    .modal{
+        width: 90%;
+        height: 90%;
+        justify-items: center;
+    }
+
+    .btn-abrir-menu{
+        display: grid;
+    }
+
+    #menu:target{
+        display: block;
+    }
+
+    .conteudo-principal-produto{
+        width: 100vw;
+    }
+
+    .icone-categoria img{
+        width: 1.5rem;
+    }
+
+    .cabecalho .titulo-restaurante a{
+        display: flex;
+        font-size: 1.2rem;
+    }
+}
+/* Responsividade para dispositivos que possuem 860px */
+
+
+/* Responsividade para dispositivos que possuem 768px */
+@media (max-width:768px){
+
+    body{
+        width: 100vw;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .conteudo-principal-produto{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .icone-categoria img{
+        display: none;
+    }
+
+    .caixa-lateral, .conteudo-lateral{
+        display: none;
+    }
+
+    .card-produto{
+        width: 10rem;
+        height: 16rem;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .btn-abrir-menu{
+        display: grid;
+    }
+
+    header{
+        padding: 1rem 1rem;
+        height: 7rem;
+    }
+}
+/* Responsividade para dispositivos que possuem 768px */
+
+
+
+/* Responsividade para dispositivos que possuem 480px */
+@media (max-width:480px) {
+
+    body{
+        width: 100vw;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .cabecalho .titulo-restaurante a{
+        font-size: 1rem;
+        margin: 0;
+        margin-left: 1rem;
+    }
+    
+
+    .btn-abrir-menu{
+        display: grid;
+    }
+
+    .conteudo-principal-produto{
+        justify-items: center;
+        max-height: 60rem;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-produto{
+        margin-left: 0.3rem;
+    }
+
+}
+/* Responsividade para dispositivos que possuem 480px */
